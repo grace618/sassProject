@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import "../helps/_variables.scss";
+.head{
+	height:$head_height;
+	width: 100%;
+	background: $head_bg;
+}
+.head_content{
+	width:$headContent_width;
+	margin:0 auto;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}

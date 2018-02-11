@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*变量*/
+/*SASS允许使用变量，所有变量以$开头。*/
+   // $blue : #1875e7;　
+    $blue : #1875e7;　
+　　div{
+	color : $blue;
+}
+$color:pink;
+div{
+	background:$color;
+}
+
+//如果变量需要镶嵌在字符串之中，就必须需要写在#{}之中。
+// 　　$side : right;
+// 　　.rounded {
+// 　　　　border-#{$side}-radius: 5px;
+// 　　}
+$var:3;
+body{
+	margin:(14px/2);
+	top:50px+100px;
+	right:$var*10%;
+}
+div{
+	h1{
+		color:red;
+	}
+}
+p{
+	border:{
+	   color:red;
+	}
+}
+//代码的重用，继承
+.class1{
+	border:1px solid #ccc;
+}
+.class2{
+	@extend .class1;
+	font-szie:120%;
+}
+// @mixin 宏，重用的代码块
+@mixin left{
+	float:left;
+	margin-left:10px;
+}
+div{
+	@include left;
+}
+//颜色函数
+// #d6d65c
+// lighten(#cc3, 10%);
+// darken(#cc3,10%);
+// grayscale(#cc3);
+//插入文件
+//@import "path/filename.scss";
+//自定义函数
+@function double($n){
+ @return $n*2;
+}
+#sidebar{
+	width:double(5px);
+}
+p{
+	@if 1+1==2 {border:1px solid #ccc}
+}
+// @if lightness($color)>30% {
+// 	background-color:#000;
+// } @else{
+// 	background-color:#fff;
+// }
+//循环语句
+$i:6;
+// @for $i from 1 to 10{
+// 	.border-#{$i}{
+// 		border:#{$i}px solid blue;
+// 	}
+// }
+@while $i>0{
+.item-#{$i}{width:2em*$i;}
+        $i:$i - 2;
+}
+@each $member in a,b,c,d{
+	.#{member}{
+		background-image:url("/images/#{member}.jpg");
+	}
+}

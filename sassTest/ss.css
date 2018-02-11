@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*变量*/
+/*SASS允许使用变量，所有变量以$开头。*/
+　
+　　div {
+  color: #1875e7; }
+
+div {
+  background: pink; }
+
+body {
+  margin: 7px;
+  top: 150px;
+  right: 30%; }
+
+div h1 {
+  color: red; }
+
+p {
+  border-color: red; }
+
+.class1, .class2 {
+  border: 1px solid #ccc; }
+
+.class2 {
+  font-szie: 120%; }
+
+div {
+  float: left;
+  margin-left: 10px; }
+
+#sidebar {
+  width: 10px; }
+
+p {
+  border: 1px solid #ccc; }
+
+.item-6 {
+  width: 12em; }
+
+.item-4 {
+  width: 8em; }
+
+.item-2 {
+  width: 4em; }
+
+.member {
+  background-image: url("/images/member.jpg"); }
+
+.member {
+  background-image: url("/images/member.jpg"); }
+
+.member {
+  background-image: url("/images/member.jpg"); }
+
+.member {
+  background-image: url("/images/member.jpg"); }
+
+/*# sourceMappingURL=ss.css.map */

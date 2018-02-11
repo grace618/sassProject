@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import "../helps/mixins.scss";
+.tag{
+	 @include tag(100px,200px);
+}
+.logo{
+  @include logo(164px,86px,20px);
+}
+.top-nav{
+	@include top-nav;
+}
+.top-nav{
+	a{
+        float: left;
+   		display: block;
+    	margin-right: 10px;
+    	color: white;
+    	font-size:12px;
+	}
+	.official-website{
+		margin-left: 23px;
+	}
+}
